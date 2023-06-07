@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2023/6 | Hexo</title>
+  <title>用递归方程求时间复杂度 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/06/index.html">
+  <meta name="description" content="分析以下递归方程的时间复杂度（t推荐使用主方法）T(n)&#x3D;1                  当n&#x3D;1 T(n)&#x3D;2T(n－1)+1        当n&gt;1  所以时间复杂度为：O(2n).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用递归方程求时间复杂度">
+<meta property="og:url" content="http://example.com/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="分析以下递归方程的时间复杂度（t推荐使用主方法）T(n)&#x3D;1                  当n&#x3D;1 T(n)&#x3D;2T(n－1)+1        当n&gt;1  所以时间复杂度为：O(2n).">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/digui.png">
+<meta property="article:published_time" content="2023-06-07T12:19:50.000Z">
+<meta property="article:modified_time" content="2023-06-07T12:22:51.122Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/digui.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,77 +75,56 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-06-07T12:19:50.000Z" itemprop="datePublished">Jun 7</time>
+        <section id="main"><article id="post-用递归方程求时间复杂度" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="article-date">
+  <time class="dt-published" datetime="2023-06-07T12:19:50.000Z" itemprop="datePublished">2023-06-07</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">用递归方程求时间复杂度</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      用递归方程求时间复杂度
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/06/07/%E6%B1%82%E8%A7%A3%E7%9F%A9%E9%98%B5%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-06-07T12:00:51.000Z" itemprop="datePublished">Jun 7</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/07/%E6%B1%82%E8%A7%A3%E7%9F%A9%E9%98%B5%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/">求解矩阵最小路径和</a>
-    </h1>
-  
+        <h2 id="分析以下递归方程的时间复杂度（t推荐使用主方法）"><a href="#分析以下递归方程的时间复杂度（t推荐使用主方法）" class="headerlink" title="分析以下递归方程的时间复杂度（t推荐使用主方法）"></a>分析以下递归方程的时间复杂度（t推荐使用主方法）</h2><p>T(n)&#x3D;1                  当n&#x3D;1</p>
+<p>T(n)&#x3D;2T(n－1)+1        当n&gt;1</p>
+<p><img src="/../images/digui.png"></p>
+<p>所以时间复杂度为：O(2n).</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/06/07/%E6%B1%82%E8%A7%A30-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-06-07T11:38:11.000Z" itemprop="datePublished">Jun 7</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/07/%E6%B1%82%E8%A7%A30-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/">求解0/1背包问题</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" data-id="clilokkvp00012osn1vn4acli" data-title="用递归方程求时间复杂度" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/06/07/%E6%B1%82%E8%A7%A3%E7%9F%A9%E9%98%B5%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">求解矩阵最小路径和</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
