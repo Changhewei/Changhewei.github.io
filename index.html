@@ -71,6 +71,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-创建新项目过程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/26/%E5%88%9B%E5%BB%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%BF%87%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2023-06-26T02:11:29.000Z" itemprop="datePublished">2023-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/26/%E5%88%9B%E5%BB%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%BF%87%E7%A8%8B/">创建新项目过程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="创建新项目过程"><a href="#创建新项目过程" class="headerlink" title="创建新项目过程"></a>创建新项目过程</h1><h2 id="1-hexo-new-post-项目名称"><a href="#1-hexo-new-post-项目名称" class="headerlink" title="1.$ hexo new post 项目名称"></a>1.$ hexo new post 项目名称</h2><p>​        eg:$ hexo new post 用递归方程求时间复杂度</p>
+<p>​        这条命令会在”source&#x2F;_posts”目录下创建一个名为”用递归方程求时间复杂度.md”的Markdown文件，用于撰写新文章。接下来，在文本编辑器中打开该文件，开始撰写文章。</p>
+<p>​        接下来，在文本编辑器中打开该文件，开始撰写文章。你可以使用Markdown语法来格式化文章内容，并在其中介绍递归方程和时间复杂度的概念，以及如何使用递归方程来求解时间复杂度。</p>
+<h2 id="2-hexo-clean-amp-amp-hexo-s"><a href="#2-hexo-clean-amp-amp-hexo-s" class="headerlink" title="2.$ hexo clean &amp;&amp; hexo s"></a>2.$ hexo clean &amp;&amp; hexo s</h2><p>​        运行<code>hexo clean &amp;&amp; hexo s</code>意味着先清除Hexo项目中的缓存文件，然后立即启动本地服务器以用于预览博客。</p>
+<p>​        一般来说，当你在Hexo博客中写完一篇文章后，需要先保存并关闭这个文件，然后再在终端窗口中执行<code>hexo clean &amp;&amp; hexo s</code>命令来清除Hexo缓存文件并启动本地服务器，从而可以在浏览器中预览你刚刚写完的这篇文章。</p>
+<p>​        如果你在写作期间需要频繁地查看文章预览效果，也可以将终端窗口保持打开状态并使用刷新功能来更新预览效果，但要注意在每次更改文章内容后，需要保存并关闭文件，并等待Hexo自动重新编译生成，然后才能看到最新的预览效果。</p>
+<p>总之，在写作过程中不需要运行<code>hexo clean &amp;&amp; hexo s</code>命令，只有在你完成了一篇文章并准备进行预览时才需要运行该命令。</p>
+<h2 id="3-hexo-d"><a href="#3-hexo-d" class="headerlink" title="3.$ hexo d"></a>3.$ hexo d</h2><p>​        这个命令的作用是将已经生成好的静态网站发布到远程服务器上，以便让其他人也能够在互联网上访问到你的博客。</p>
+<p>​        具体来说，执行<code>hexo d</code>命令会按照配置文件中的相关设置，将已经生成好的网站代码上传到远程服务器中指定的路径中。需要注意的是，在执行该命令之前，你需要先在配置文件中正确地设置好服务器相关的参数，包括服务器地址、用户名、密码等信息。</p>
+<p>​        如果你已经设置好了这些参数并成功登录到服务器中，那么执行<code>hexo d</code>命令就可以将你的博客发布到互联网上了。发布成功后，其他人就可以通过浏览器访问你的博客了。</p>
+<h2 id="4-hexo-s"><a href="#4-hexo-s" class="headerlink" title="4.$ hexo s"></a>4.$ hexo s</h2><p>​        执行<code>hexo s</code>命令会启动Hexo本地服务器，以便你可以在本地计算机上预览你的博客。</p>
+<p>​        具体来说，该命令将在本地计算机上创建一个Web服务器，将生成好的静态网站文件作为该服务器的根目录，并监听指定的端口号，以允许你在本地计算机上通过浏览器来访问该服务器。</p>
+<p>默认情况下，<code>hexo s</code>命令使用的端口号是4000，这意味着你可以通过访问”<a target="_blank" rel="noopener" href="http://localhost:4000"来访问本地服务器。当然，如果你希望使用其他的端口号来启动服务器，也可以在命令中指定端口号，例如：">http://localhost:4000&quot;来访问本地服务器。当然，如果你希望使用其他的端口号来启动服务器，也可以在命令中指定端口号，例如：</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p 8888</span><br></pre></td></tr></table></figure>
+
+<p>​        其中，”-p”参数指定了要使用的端口号，这里是8888。这将启动一个监听8888端口的本地服务器，你可以在浏览器中通过”<a target="_blank" rel="noopener" href="http://localhost:8888"来访问该服务器。">http://localhost:8888&quot;来访问该服务器。</a></p>
+<p>​        需要注意的是，执行<code>hexo s</code>命令只是在本地计算机上启动了一个Web服务器，其他人是无法在互联网上访问到该服务器的。如果需要将你的博客发布到互联网上，需要使用<code>hexo deploy</code>等命令来将静态网站文件上传到远程服务器上。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/26/%E5%88%9B%E5%BB%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%BF%87%E7%A8%8B/" data-id="cljc8vfwv0001qcsn8enm9aq5" data-title="创建新项目过程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-用递归方程求时间复杂度" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="article-date">
@@ -101,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" data-id="clilokkvp00012osn1vn4acli" data-title="用递归方程求时间复杂度" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" data-id="cljc8vfwy0002qcsng44u0wws" data-title="用递归方程求时间复杂度" class="article-share-link">Share</a>
       
       
       
@@ -158,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/07/%E6%B1%82%E8%A7%A3%E7%9F%A9%E9%98%B5%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/" data-id="clilokkvy00032osn6m9sau9m" data-title="求解矩阵最小路径和" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/06/07/%E6%B1%82%E8%A7%A3%E7%9F%A9%E9%98%B5%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/" data-id="cljc8vfx00004qcsnayg99rgz" data-title="求解矩阵最小路径和" class="article-share-link">Share</a>
       
       
       
@@ -206,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/07/%E6%B1%82%E8%A7%A30-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" data-id="clilokkvv00022osnc2b5gz34" data-title="求解0/1背包问题" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/06/07/%E6%B1%82%E8%A7%A30-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/" data-id="cljc8vfwz0003qcsn7gxvgawy" data-title="求解0/1背包问题" class="article-share-link">Share</a>
       
       
       
@@ -257,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/26/hello-world/" data-id="clilokkve00002osn6g8e9hgt" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/26/hello-world/" data-id="cljc8vfwo0000qcsne6y2hajy" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -298,6 +353,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/06/26/%E5%88%9B%E5%BB%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%BF%87%E7%A8%8B/">创建新项目过程</a>
+          </li>
         
           <li>
             <a href="/2023/06/07/%E7%94%A8%E9%80%92%E5%BD%92%E6%96%B9%E7%A8%8B%E6%B1%82%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">用递归方程求时间复杂度</a>
